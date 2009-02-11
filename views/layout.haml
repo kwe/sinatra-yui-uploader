@@ -1,0 +1,19 @@
+<!doctype>
+%html
+  %head
+    %title
+      Uploader
+    %script{ :src => "js/swfupload.js", :type => "text/javascript" }
+    %script{ :src => "js/swfupload.queue.js", :type => "text/javascript" }
+    %script{ :src => "js/fileprogress.js", :type => "text/javascript" }
+    %script{ :src => "js/handlers.js", :type => "text/javascript" }
+    %script{ :src => "js/app.js", :type => "text/javascript" }  
+      
+    %link{ :href => "/css/screen.css", :rel => "stylesheet", :media => "screen, projection", :type => "text/css" }
+    %link{ :href => "/css/print.css", :rel => "stylesheet", :media => "print", :type => "text/css" }
+    %link{ :href => "/css/default.css", :rel => "stylesheet", :media => "screen, projection", :type => "text/css" }
+  %body
+    .container
+      #content.span-12.prepend-6.append-6
+      %h1 Uploader
+      = yield

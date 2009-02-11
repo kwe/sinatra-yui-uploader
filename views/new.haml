@@ -1,0 +1,13 @@
+%h2
+  Simple Demo
+%form#form1{ :enctype => "multipart/form-data", :method => "post", :action => "/create" }
+  %p
+    This page demonstrates a simple usage of SWFUpload.  It uses the Queue Plugin to simplify uploading or cancelling all queued files.
+  #fsUploadProgress.fieldset.flash
+    %span.legend
+      Upload Queue
+  #divStatus
+    0 Files Uploaded
+  %div
+    %span#spanButtonPlaceHolder
+    %input#btnCancel{ :value => "Cancel All Uploads", :type => "button", :onclick => "swfu.cancelQueue();", :disabled => "disabled", :style => "margin-left: 2px; font-size: 8pt; height: 29px;" }

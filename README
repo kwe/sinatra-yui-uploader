@@ -1,0 +1,3 @@
+Sinatra based uploader using SWFUPLOAD.
+
+create a upload folder in public before you run.

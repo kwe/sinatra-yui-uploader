@@ -13,8 +13,8 @@ post '/create' do
 	if params[:Filedata]
 		file = params[:Filedata]
 		filename = params["Filename"]	
-		print file[:tempfile].inspect
 
-		File.open("public/upload/#{filename}", 'w') {|f| f.write file[:tempfile] }
+		File.open("public/upload/#{filename}", 'w') {|f| f.write file[:tempfile].read }
 	end 
+	" "
 end

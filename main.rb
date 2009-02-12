@@ -18,4 +18,5 @@ post '/create' do
 
 		File.open("public/upload/#{filename}", 'w') {|f| f.write file[:tempfile].read }
 	end 
+	" "
 end

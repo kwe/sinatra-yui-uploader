@@ -3,15 +3,23 @@
   %head
     %title
       Uploader
-    %script{ :src => "js/swfupload.js", :type => "text/javascript" }
-    %script{ :src => "js/swfupload.queue.js", :type => "text/javascript" }
-    %script{ :src => "js/fileprogress.js", :type => "text/javascript" }
-    %script{ :src => "js/handlers.js", :type => "text/javascript" }
-    %script{ :src => "js/app.js", :type => "text/javascript" }  
+
+    %style{ :type => "text/css" }
+      body {
+      margin:0;
+      padding:0;
+      }
       
-    %link{ :href => "/css/screen.css", :rel => "stylesheet", :media => "screen, projection", :type => "text/css" }
-    %link{ :href => "/css/print.css", :rel => "stylesheet", :media => "print", :type => "text/css" }
+    %link{ :href => "http://yui.yahooapis.com/2.6.0/build/fonts/fonts-min.css", :rel => "stylesheet", :type => "text/css" }
+    %link{ :href => "http://yui.yahooapis.com/2.6.0/build/datatable/assets/skins/sam/datatable.css", :rel => "stylesheet", :type => "text/css" }
+    %script{ :src => "http://yui.yahooapis.com/2.6.0/build/yahoo-dom-event/yahoo-dom-event.js", :type => "text/javascript" }
+    %script{ :src => "http://yui.yahooapis.com/2.6.0/build/element/element-beta-min.js", :type => "text/javascript" }
+    %script{ :src => "http://yui.yahooapis.com/2.6.0/build/uploader/uploader-experimental.js", :type => "text/javascript" }
+    %script{ :src => "http://yui.yahooapis.com/2.6.0/build/datasource/datasource-min.js", :type => "text/javascript" }
+    %script{ :src => "http://yui.yahooapis.com/2.6.0/build/datatable/datatable-min.js", :type => "text/javascript" }
+
     %link{ :href => "/css/default.css", :rel => "stylesheet", :media => "screen, projection", :type => "text/css" }
+    
   %body
     .container
       #content.span-12.prepend-6.append-6

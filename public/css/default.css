@@ -1,0 +1,15 @@
+
+#selectFilesLink a, #uploadFilesLink a, #clearFilesLink a {
+	color: #0000CC;
+	background-color: #FFFFFF;
+}
+
+#selectFilesLink a:visited, #uploadFilesLink a:visited, #clearFilesLink a:visited {
+	color: #0000CC;
+	background-color: #FFFFFF;
+}
+
+#uploadFilesLink a:hover, #clearFilesLink a:hover {	
+	color: #FFFFFF;
+	background-color: #000000;
+}
